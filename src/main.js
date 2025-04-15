@@ -17,7 +17,7 @@ const getCity = async () => {
 
 const getWeather = async (cityName = "Agartala") => {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=4bcd1896070a4490bc2162402251504&q=${cityName}`
+    `https://api.weatherapi.com/v1/forecast.json?key=4bcd1896070a4490bc2162402251504&q=${cityName}`
   );
   const data = await response.json();
 
