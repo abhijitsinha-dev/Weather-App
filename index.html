@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="#" autocomplete="off">
+      <input type="search" id="searchInput">
+      <button id="searchBtn">
+        <img src="/search.png">
+      </button>
+    </form>
+
+    <!-- <div id="error"></div> -->
+
+    <main>
+      <img src="/clear.png" id="weather-img">
+      <h1 id="temparature"></h1>
+      <h2 id="city"></h2>
+    </main>
+
+    <section>
+      <div class="humidity-wind">
+        <div class="humidity-wind-img">
+          <img src="/humidity.png">
+        </div>
+        <div class="humidity-wind-value">
+          <p id="humidity"></p>
+          <p>Humidity</p>
+        </div>
+      </div>
+      <div class="humidity-wind">
+        <div class="humidity-wind-img">
+          <img src="/wind.png">
+        </div>
+        <div class="humidity-wind-value">
+          <p id="wind-speed"></p>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script type="module" src="/src/main.js"></script>
+
+</html>

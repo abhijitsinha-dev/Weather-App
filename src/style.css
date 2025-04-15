@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 500px;
+  margin: 120px auto 0 auto;
+  padding: 50px 0;
+  border-radius: 10%;
+  background: #348F50;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #56B4D3, #348F50);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.humidity-wind {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.humidity-wind-value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+#searchBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  padding: 10px;
+}
+
+.humidity-wind-img {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+form input {
+  outline: none;
+  padding: 10px 5px 10px 20px;
+  border-radius: 20px;
+  border: none;
+  flex: 1
+}
+
+main img {
+  width: 200px;
+  height: 200px;
+}
+
+h1,
+h2 {
+  font-size: 40px;
+}
