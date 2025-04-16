@@ -18,7 +18,9 @@ const getCity = async () => {
 
 const getWeather = async (cityName) => {
   const response = await fetch(
-    `https://api.weatherapi.com/v1/forecast.json?key=4bcd1896070a4490bc2162402251504&q=${cityName}`
+    `https://api.weatherapi.com/v1/forecast.json?key=${
+      import.meta.env.VITE_API_KEY
+    }&q=${cityName}`
   );
   const data = await response.json();
 
