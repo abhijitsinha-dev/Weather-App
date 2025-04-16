@@ -16,9 +16,7 @@ A simple and elegant weather application that fetches and displays real-time wea
 
 ## 🚀 Demo
 
-[Live Weather App 🚀](https://your-username.github.io/Weather-App/)
-
-> Replace with your actual GitHub Pages URL.
+[Live Weather App 🚀](https://abhijitsinha-dev.github.io/Weather-App/)
 
 ## 🧰 Tech Stack
 
@@ -32,9 +30,11 @@ A simple and elegant weather application that fetches and displays real-time wea
 
 ## 📸 Screenshots
 
+![App Screenshot](./public/screenshot.png)
+
 ## 🔐 Environment Variables via GitHub Secrets
 
-In your GitHub repository:
+In GitHub repository:
 
 1. Go to **Settings > Secrets and Variables > Actions**.
 2. Add a new secret:
