@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="./src/style.css">
   <title>Weather App</title>
 </head>
@@ -11,13 +12,13 @@
 <body>
   <div class="container">
     <form action="#" autocomplete="off">
-      <input type="search" id="searchInput">
+      <input type="search" placeholder="Enter you city" id="searchInput">
       <button id="searchBtn">
         <img src="/search.png">
       </button>
     </form>
 
-    <!-- <div id="error"></div> -->
+    <p id="error"></p>
 
     <main>
       <img src="/clear.png" id="weather-img">

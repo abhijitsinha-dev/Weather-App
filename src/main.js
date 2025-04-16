@@ -5,6 +5,7 @@ const windSpeed = document.getElementById("wind-speed");
 const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
 const weatherImg = document.getElementById("weather-img");
+const error = document.getElementById("error");
 
 const getCity = async () => {
   const response = await fetch("https://ipapi.co/json/");
@@ -15,7 +16,7 @@ const getCity = async () => {
   }
 };
 
-const getWeather = async (cityName = "Agartala") => {
+const getWeather = async (cityName) => {
   const response = await fetch(
     `https://api.weatherapi.com/v1/forecast.json?key=4bcd1896070a4490bc2162402251504&q=${cityName}`
   );
@@ -27,15 +28,18 @@ const getWeather = async (cityName = "Agartala") => {
     humidity.innerText = data.current.humidity + " %";
     windSpeed.innerText = data.current.wind_kph + " km/h";
     weatherImg.src = data.current.condition.icon;
+    error.innerText = "";
+  } else {
+    error.innerText = data.error.message;
   }
 };
 
-// apiCall();
-
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  if (searchInput.value.trim()) {
-    getWeather(searchInput.value.trim());
+  const cityName = searchInput.value.trim();
+  searchInput.value = "";
+  if (cityName) {
+    getWeather(cityName);
   }
 });
 

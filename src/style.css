@@ -15,17 +15,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   max-width: 500px;
   margin: 120px auto 0 auto;
   padding: 50px 0;
   border-radius: 10%;
   background: #348F50;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #56B4D3, #348F50);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 main {
@@ -34,6 +30,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 80%;
+  margin-bottom: 20px;
 }
 
 section {
@@ -109,4 +106,10 @@ main img {
 h1,
 h2 {
   font-size: 40px;
+}
+
+#error {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
 }
