@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <title>Weather App</title>
+  <script type="module" crossorigin src="/Weather-App/assets/index-EBsUCj-H.js"></script>
+  <link rel="stylesheet" crossorigin href="/Weather-App/assets/index-CS8FtZjb.css">
+</head>
+
+<body>
+  <div class="container">
+    <form action="#" autocomplete="off">
+      <input type="search" placeholder="Enter you city" id="searchInput">
+      <button id="searchBtn">
+        <img src="/Weather-App/search.png">
+      </button>
+    </form>
+
+    <p id="error"></p>
+
+    <main>
+      <img src="/clear.png" id="weather-img">
+      <h1 id="temparature"></h1>
+      <h2 id="city"></h2>
+    </main>
+
+    <section>
+      <div class="humidity-wind">
+        <div class="humidity-wind-img">
+          <img src="/Weather-App/humidity.png">
+        </div>
+        <div class="humidity-wind-value">
+          <p id="humidity"></p>
+          <p>Humidity</p>
+        </div>
+      </div>
+      <div class="humidity-wind">
+        <div class="humidity-wind-img">
+          <img src="/Weather-App/wind.png">
+        </div>
+        <div class="humidity-wind-value">
+          <p id="wind-speed"></p>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
